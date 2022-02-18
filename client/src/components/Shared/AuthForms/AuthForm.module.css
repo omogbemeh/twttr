@@ -1,0 +1,19 @@
+.authFormDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.authForm {
+  color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.authFormGroup {
+  margin-bottom: 2rem;
+}

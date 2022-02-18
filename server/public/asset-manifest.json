@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f6c5ace0.css",
+    "main.js": "/static/js/main.27078f95.js",
+    "static/media/Top-Tweets.svg": "/static/media/Top-Tweets.a665fbc78b9f3251554e73003765beeb.svg",
+    "static/media/twitterLogo.svg": "/static/media/twitterLogo.70ddc152f45146d8ae9da7983233f5b3.svg",
+    "static/media/ProfileLight.svg": "/static/media/ProfileLight.feecedcc7ce92ac5ede18bd88dd7fa67.svg",
+    "static/media/HomeLight.svg": "/static/media/HomeLight.710618a86ea4447e5098e4a651e7ccea.svg",
+    "index.html": "/index.html",
+    "static/media/LikeLight.svg": "/static/media/LikeLight.6e102f58b19a4bef3b57a1a4c6687720.svg",
+    "static/media/BookmarksLight.svg": "/static/media/BookmarksLight.656ebb847607695be2a52e00037230d8.svg",
+    "static/media/Search.svg": "/static/media/Search.1248d8b09a773b0864dc1517fa942b59.svg",
+    "static/media/Logo.svg": "/static/media/Logo.6615adc13e67b4cf0f1b96902e662f77.svg",
+    "main.f6c5ace0.css.map": "/static/css/main.f6c5ace0.css.map",
+    "main.27078f95.js.map": "/static/js/main.27078f95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6c5ace0.css",
+    "static/js/main.27078f95.js"
+  ]
+}

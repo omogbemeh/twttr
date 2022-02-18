@@ -1,0 +1,21 @@
+button {
+  padding: 0.6rem;
+  font: inherit;
+  width: 100%;
+  font-size: 1.4rem;
+  letter-spacing: 0.25px;
+  border-radius: 3rem;
+  border: none;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.light {
+  background: #ffffff;
+  color: #3c4043;
+}
+
+.blue {
+  background: #308cd8;
+  color: #ffffff;
+}

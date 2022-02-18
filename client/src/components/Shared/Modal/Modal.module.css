@@ -1,0 +1,54 @@
+.modalContainer {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal {
+  background-color: #000000;
+  z-index: 4;
+  height: 70vh;
+  width: 70vw;
+  border-radius: 2%;
+  display: grid;
+  justify-items: center;
+  padding: 3%;
+  color: white;
+}
+.modalOverlay {
+  background-color: hsl(206, 18%, 17%, 0.5);
+  position: absolute;
+  inset: 0;
+}
+
+.modalContent {
+  width: 80%;
+  height: 95%;
+}
+
+@media screen and (max-width: 720px) {
+  .modal {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modalContent {
+    /* padding: 5% 10%; */
+    height: 90%;
+    width: 90%;
+    /* display: none; */
+  }
+  .modalOverlay {
+    display: none;
+  }
+}

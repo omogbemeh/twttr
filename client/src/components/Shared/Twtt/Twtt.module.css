@@ -1,0 +1,88 @@
+.twtt-wrapper {
+  /* background: red; */
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  gap: 3%;
+}
+
+.twtt-imageBox {
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: red;
+  border-radius: 100%;
+}
+
+.twtt-retwttedBy {
+  cursor: pointer;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+  color: #6e767d;
+  padding-bottom: 0.5rem;
+}
+
+.twtt-handle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d9d9d9;
+  line-height: 2rem;
+  margin-bottom: 0.5%;
+}
+
+.twtt-username {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #6e767d;
+  line-height: 2rem;
+}
+
+.twtt {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #d9d9d9;
+  line-height: 2rem;
+  margin-bottom: 2%;
+}
+
+.twtt-options {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "a a a a";
+  grid-auto-columns: 1fr;
+  cursor: pointer;
+  align-items: center;
+  color: #6e767d;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.twtt-optionsGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.twtt-optionsIcon {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 5%;
+  border-radius: 100%;
+}
+
+.twtt-optionsIcon:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.twtt-optionsIcon img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.twtt-optionsIcon:hover img {
+  color: green;
+}

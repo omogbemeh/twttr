@@ -1,0 +1,118 @@
+.wrapper {
+  display: flex;
+  width: 100vw;
+  min-height: 100%;
+  background: #000000;
+  justify-content: center;
+}
+
+.homeFeedLayout {
+  display: flex;
+  width: 100%;
+  max-width: 110rem;
+  justify-content: space-between;
+  height: 100vh;
+  background: #1da1f2;
+}
+
+.leftSection {
+  background: #000000;
+  color: #d9d9d9;
+  flex: 0.1;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 3% 2%;
+}
+
+.leftSectionContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftSection-top {
+  margin-bottom: 3rem;
+}
+
+.leftSection-tweetIconBorder {
+  background-color: #1da1f2;
+  padding: 1.3rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.leftSection-tweetIconBorder:hover {
+  background-color: #40a4e2;
+}
+
+.leftSection-tweetIconPlus {
+  font-size: 2rem;
+}
+
+.leftSection-tweetIcon {
+  height: 2rem;
+}
+
+.leftSection-logout {
+  justify-self: flex-end;
+}
+
+.feedLogo {
+  height: 2.3rem;
+  cursor: pointer;
+}
+
+.middleSection {
+  background: #000000;
+  position: relative;
+  /* width: 100%; */
+  flex: 0.8;
+  border-left: 1px solid rgba(217, 217, 217, 0.3);
+  border-right: 1px solid rgba(217, 217, 217, 0.3);
+  overflow-y: scroll;
+}
+
+.rightSection {
+  flex: 0.1;
+  width: 100%;
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 726px) {
+  .rightSection {
+    display: none;
+  }
+
+  .leftSection {
+    padding: 4% 0.5%;
+    display: flex;
+    justify-content: center;
+    flex: 0.15;
+  }
+
+  .middleSection {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 727px) {
+  .leftSection {
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+    flex: 0.15;
+  }
+
+  .middleSection {
+    flex: 1;
+    flex-grow: 1;
+  }
+}

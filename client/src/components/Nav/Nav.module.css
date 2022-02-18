@@ -1,0 +1,21 @@
+.navBar {
+  width: 100%;
+  height: 100%;
+}
+
+.navList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.navItem img {
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+.navItem {
+  padding-bottom: 2.5rem;
+}

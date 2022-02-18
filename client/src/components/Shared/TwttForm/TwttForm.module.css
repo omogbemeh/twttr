@@ -1,0 +1,65 @@
+.twttForm {
+  padding-top: 4rem;
+  /* background: yellow; */
+}
+
+.twttForm-inner {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: start;
+  column-gap: 3%;
+  /* align-items: center; */
+  /* padding: 2% 0; */
+}
+
+.twttForm-image {
+  /* flex: 0.1; */
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 100%;
+  background: red;
+  align-self: flex-start;
+}
+
+.twttForm-Container {
+  width: 100%;
+  flex: 0.9;
+}
+
+.twttForm-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 100%; */
+}
+
+.twttForm-form input {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: rgba(217, 217, 217, 0);
+  width: 100%;
+  border: 0;
+  line-height: 2.4rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  background-color: inherit;
+  outline: none;
+  color: #d9d9d9;
+  white-space: pre-wrap;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  cursor: text;
+}
+
+.twttForm-form input:focus {
+  border-bottom: 1px solid #1da1f2;
+}
+
+.twttForm-submit {
+  align-self: flex-end;
+  width: 20%;
+  /* max-width: 100%; */
+  background-color: #174d78;
+  color: #d9d9d9;
+  margin-top: 1rem;
+}

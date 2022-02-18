@@ -1,0 +1,8 @@
+.feedBox {
+  display: -ms-grid;
+  display: grid;
+  /* place-content: center; */
+  /* width: 100%; */
+  padding: 2% 3.5% 1%;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+}

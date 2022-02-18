@@ -1,0 +1,14 @@
+.feed-section {
+  position: relative;
+  width: 100%;
+}
+
+.feed-sectionHeader {
+  position: relative;
+  top: 0;
+  background: rebeccapurple;
+  /* left: 0;
+  right: 0; */
+  min-width: 100%;
+  /* left: -300px; */
+}
