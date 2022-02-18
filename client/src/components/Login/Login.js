@@ -13,7 +13,7 @@ function Login() {
   return (
     <Fragment>
       {displayLogin && (
-        <Modal>
+        <Modal onCloseModal={showLoginMenu}>
           <h5 className={styles.register}>Create your account</h5>
           <AuthForm />
         </Modal>
