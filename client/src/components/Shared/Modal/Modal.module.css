@@ -10,6 +10,10 @@
   width: 100vw;
 }
 
+.modalContainer.close {
+  display: none;
+}
+
 .modal {
   background-color: #000000;
   z-index: 4;
@@ -21,6 +25,11 @@
   padding: 3%;
   color: white;
 }
+
+.modal.close {
+  display: none;
+}
+
 .modalOverlay {
   background-color: hsl(206, 18%, 17%, 0.5);
   position: absolute;
@@ -30,6 +39,10 @@
 .modalContent {
   width: 80%;
   height: 95%;
+}
+
+.modalContent.close {
+  display: none;
 }
 
 @media screen and (max-width: 720px) {

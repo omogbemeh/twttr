@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import logo from "../../assets/twitterLogo.svg";
 import AuthForm from "../Shared/AuthForms/AuthForm";
 import Button from "../Shared/Button/Button";
@@ -6,13 +6,18 @@ import Modal from "../Shared/Modal/Modal";
 import styles from "./Login.module.css";
 
 function Login() {
+  const [displayLogin, setDisplayLogin] = useState(false);
+  const showLoginMenu = () => {
+    setDisplayLogin((prev) => !prev);
+  };
   return (
     <Fragment>
-      <Modal>
-        <h5 className={styles.register}>Create your account</h5>
-        <AuthForm />
-      </Modal>
-
+      {displayLogin && (
+        <Modal>
+          <h5 className={styles.register}>Create your account</h5>
+          <AuthForm />
+        </Modal>
+      )}
       <section className={styles["login-section"]}>
         <div className={styles["logo-inner"]}>
           <img className={styles["logo"]} src={logo} alt="Twitter Logo"></img>
@@ -38,7 +43,10 @@ function Login() {
               <p className={styles["login-alreadySignedIn"]}>
                 Already have an account?
               </p>
-              <button className={styles["login-signInWithEmail"]}>
+              <button
+                onClick={showLoginMenu}
+                className={styles["login-signInWithEmail"]}
+              >
                 Sign in
               </button>
             </div>
