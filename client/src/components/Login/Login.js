@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import logo from "../../assets/twitterLogo.svg";
+import { authActions, checkAuthentication } from "../../store/slices/authSlice";
 import AuthForm from "../Shared/AuthForms/AuthForm";
 import Button from "../Shared/Button/Button";
 import Modal from "../Shared/Modal/Modal";
@@ -7,7 +9,13 @@ import styles from "./Login.module.css";
 
 function Login() {
   const [displayLogin, setDisplayLogin] = useState(false);
+  const isAuthenticated = useSelector((state) => {
+    return state;
+  });
+  console.log(isAuthenticated);
+  const dispatch = useDispatch();
   const showLoginMenu = () => {
+    dispatch(checkAuthentication());
     setDisplayLogin((prev) => !prev);
   };
   return (

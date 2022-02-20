@@ -41,7 +41,7 @@ async function register(req, res) {
       hash,
     };
     const user = await createUser(newUser);
-    return res.status(201).json(user.username);
+    return res.status(201).json(user);
   } catch (error) {
     console.error({ error });
     if (error) {
@@ -56,7 +56,7 @@ async function register(req, res) {
 // Login User
 async function login(req, res) {
   if (req.isAuthenticated()) {
-    res.json({ msg: "What are we doing with all this future?" });
+    return res.json({ msg: "What are we doing with all this future?" });
   }
   const { username, password } = req.body;
 

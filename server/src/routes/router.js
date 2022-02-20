@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.use("/auth", authRouter);
 router.use("/u", userRouter);
-router.use("/", twttRouter);
+router.use("/twtt", twttRouter);
 
 module.exports = router;
